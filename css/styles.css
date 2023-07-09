@@ -288,7 +288,6 @@ button {
 }
 .team-social-item,
 .footer-social-item {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 40px;
     height: 40px;
 }
@@ -301,6 +300,7 @@ button {
     height: 100%;
     border-radius: 50%;
     background-color: var(--primary-brand-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -319,7 +319,6 @@ button {
 .customers-item {
     height: 88px;
     width: calc((100% - 120px) / 6);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link {
     width: 100%;
@@ -330,6 +329,7 @@ button {
     align-items: center;
     justify-content: center;
     color: var(--subtle-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -372,7 +372,7 @@ button {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: var(--light-color);
+    color: var(--white-color);
     margin-bottom: 16px;
 }
  
@@ -518,12 +518,9 @@ button {
 .modal-button:focus {
     background-color: var(--pressed-state-color);
     border: none;
+    fill: var(--white-color);
 
 }
 .close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.close-icon:hover,
-.close-icon:focus {
-    fill: var(--white-color);
 }
